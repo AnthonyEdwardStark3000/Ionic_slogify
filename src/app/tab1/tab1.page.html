@@ -1,17 +1,56 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title style="text-align: center;"><b>Slogify</b></ion-title>
+    <ion-avatar style="position: relative;width: 40; align-items: right; padding-bottom: 30;"><img src="../../assets/shapes.svg" alt=""></ion-avatar>
   </ion-toolbar>
 </ion-header>
+<ion-content>
+<img src="../../assets/undraw_Metrics_re_6g90.svg" style="margin-top: 20px; margin-left: auto; margin-right: auto; width: 60%; position: relative;">
+<ion-item style="margin-top: 10px;">
+  <ion-label>Name</ion-label>
+  <ion-select>
+    <ion-select-option value="name1">Name1</ion-select-option>
+    <ion-select-option value="name2">Name2</ion-select-option>
+    <ion-select-option value="name3">Name3</ion-select-option>
+    <ion-select-option value="name4">Name4</ion-select-option>
+  </ion-select>
+</ion-item>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<!-- trial -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+<ion-item>
+  <span style="padding-right: 20px;">From </span>
+  <!-- <ion-label>From</ion-label> -->
+  <ion-datetime displayFormat="MM DD YY" placeholder="Select Month Date Year" style="position:relative"></ion-datetime>
+</ion-item>
+<div class="col">
+<ion-item style="margin-top: 15px;">
+  <span style="padding-right: 20px;">To </span>
+  <!-- <ion-label>To</ion-label> -->
+  <ion-datetime displayFormat="MM DD YY" placeholder="Select Month Date Year" style="position:relative"></ion-datetime>
+</ion-item>
+<!-- <h3>Subject</h3> -->
+<ion-input><b style="padding-left: 10px; font-size: 21; font-weight: normal;">Subject</b></ion-input>
+<hr>
+<ion-item>
+  <ion-textarea>Reason</ion-textarea>
+</ion-item>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-item>
+  <ion-label>Approoved</ion-label>
+  <ion-radio slot="start" value="biff">Approoved</ion-radio>
+</ion-item>
+<ion-item>
+  <ion-label>Rejected</ion-label>
+  <ion-radio slot="start" value="biff">Approoved</ion-radio>
+</ion-item>
+<ion-button>Submit</ion-button>
+<ion-button color="danger">Cancel</ion-button>
+
+</div>
+</div>
+</div>
+</div>
 </ion-content>
