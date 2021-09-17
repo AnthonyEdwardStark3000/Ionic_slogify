@@ -1,10 +1,16 @@
 <ion-header>
   <ion-toolbar>
     <ion-title style="text-align: center;"><b>Slogify</b></ion-title>
-    <ion-avatar style="position: relative;width: 40; align-items: right; padding-bottom: 30;"><img src="../../assets/shapes.svg" alt=""></ion-avatar>
+    <ion-avatar style="display: flex;width: 40; height: 20; align-items: right; padding-bottom: 30;" id="display"><img src="../../assets/shapes.svg" alt=""></ion-avatar>
   </ion-toolbar>
 </ion-header>
 <ion-content>
+<ion-list>
+  <ion-item>Menu Item</ion-item>
+  <ion-item>Menu Item</ion-item>
+  <ion-item>Menu Item</ion-item>
+  <ion-item>Menu Item</ion-item>
+</ion-list>
 <img src="../../assets/undraw_Metrics_re_6g90.svg" style="margin-top: 20px; margin-left: auto; margin-right: auto; width: 60%; position: relative;">
 <ion-item style="margin-top: 10px;">
   <ion-label>Name</ion-label>
@@ -40,15 +46,14 @@
 
 <ion-item>
   <ion-label>Approoved</ion-label>
-  <ion-radio slot="start" value="biff">Approoved</ion-radio>
+  <ion-radio slot="start" value="ok">Approoved</ion-radio>
 </ion-item>
 <ion-item>
   <ion-label>Rejected</ion-label>
-  <ion-radio slot="start" value="biff">Approoved</ion-radio>
+  <ion-radio slot="start" value="cancel">Approoved</ion-radio>
 </ion-item>
 <ion-button>Submit</ion-button>
 <ion-button color="danger">Cancel</ion-button>
-
 </div>
 </div>
 </div>

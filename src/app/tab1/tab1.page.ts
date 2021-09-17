@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import { AngularFirestore } from 'angularfire2/firestore';
 // import { HeaderColor } from '@ionic-native/header-color/ngx';
 
 @Component({
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+
+
+
 
   constructor() {}
 
