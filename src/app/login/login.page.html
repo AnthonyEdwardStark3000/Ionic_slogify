@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar style="background-color: blue;">
+    <ion-title style="text-align: center;">login</ion-title>
+  </ion-toolbar>
+  <ion-avatar style="width: 20; align-items: flex-end;">
+    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+  </ion-avatar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item>
+   <ion-label position="floating">Name</ion-label>
+   <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+   <ion-label position="floating">Password</ion-label>
+   <ion-input type="password"></ion-input>
+  </ion-item>
+</ion-list>
+<ion-button shape="round" expand="block" style="margin-top: 30px;" (click)="submit()">Submit</ion-button>
+</ion-content>

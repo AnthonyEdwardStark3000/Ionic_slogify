@@ -6,8 +6,9 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-// import { AngularFireModule} from 'angularfire2';
-// import { AngularFirestoreModule} from 'angularfire2/firestore';
+import { AngularFireModule} from 'angularfire2';
+import { environment } from 'src/environments/environment';
+import { AngularFirestoreModule} from 'angularfire2/firestore';
 // import { firebaseConfig } from 'src/config';
 
 
@@ -17,8 +18,8 @@ import { AppComponent } from './app.component';
   imports: [BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    // AngularFireModule.initializeApp(firebaseConfig),
-    // AngularFirestoreModule
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
