@@ -1,0 +1,52 @@
+.row
+{
+  height: 50px;
+}
+.title
+{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 7px;
+}
+.container
+{
+  width:300px;
+  border: 1px solid red;
+}
+.label
+{
+  font-size: small;
+  font-weight: bold;
+  font-style: oblique;
+  margin-bottom: 0%;
+}
+.forgot
+{
+float: right;
+font-size: 13px;
+}
+a:hover{
+cursor: pointer;
+color: blue;
+margin: 3px;
+margin-bottom: 40px;
+}
+
+#question
+{
+  margin-bottom: 7px;
+}
+
+#signin
+{
+border-radius: 12px;
+}
+#second
+{
+margin-top: 6px;
+}
+#style
+{
+border: 1px solid green;
+border-radius: 12px;
+}

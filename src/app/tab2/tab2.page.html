@@ -1,17 +1,60 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title class="title">Welcome to SLogify</ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content>
+        <div class="container" style="border: 1px solid pink; height:100%; width:100%">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4">
+                  <ion-label class="label">Name :</ion-label>
+                </div>
+                <div class="col-md-8">
+                  <ion-input placeholder="User name"></ion-input>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <ion-label class="label">Password :</ion-label>
+                </div>
+                <div class="col-md-8">
+                  <ion-input placeholder="Password"></ion-input>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <!-- <div class="col-md-6"> -->
+                  <div class="col-md-12" id="question">
+                    <a><span class="forgot">Forgot password?</span></a>
+                  </div>
+                <button class="btn btn-primary btn-sm" id="signin" [routerLink]="['/mainpagelink']" expand="block">SIGN IN</button>
+                </div>
+                <div class="col-md-6 ">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-4" id="second">
+                  <span>or Signup</span>
+                </div>
+                <div class="col-md-2">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <button class="btn btn-primary">Fb</button>
+                </div>
+                <div class="col-md-4">
+                <button class="btn btn-primary">TW</button>
+                </div>
+                <div class="col-md-4">
+                <button class="btn btn-primary">Gl</button>
+                </div>
+              </div>
+              <!-- <ion-button [routerLink]="['/login']"  color="danger">Sign In</ion-button> -->
+            </div>
+          </div>
 </ion-content>

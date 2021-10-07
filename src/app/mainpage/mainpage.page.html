@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="title">SLogify</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-tabs>
+
+    <ion-fab vertical="bottom" horizontal="center" translucent="true">
+      <ion-fab-button (click)="goToPictures()">
+        <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+    <ion-tab-bar slot="bottom" class="ion-no-border"style="background-color: transparent
+    ;">
+      <ion-tab-button tab="tab-encounters" style="background-color: rgb(0, 204, 153)
+      ;">
+        <ion-icon name="compass"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button tab="tab-conversations" class="comments" style="background-color: rgb(0, 204, 153)
+      ;">
+        <ion-icon name="chatbubbles"></ion-icon>
+        <!-- <ion-badge *ngIf="new_message">{{new_message}}</ion-badge> -->
+      </ion-tab-button>
+
+      <svg height="50" viewBox="0 0 100 50" width="100" xmlns="http://www.w3.org/2000/svg"><path style="fill: rgb(0, 204, 153)
+        ;" d="M100 0v50H0V0c.543 27.153 22.72 49 50 49S99.457 27.153 99.99 0h.01z" fill="red" fill-rule="evenodd"></path></svg>
+
+      <ion-tab-button tab="tab-notifications" class="notifs" style="background-color: rgb(0, 204, 153)
+      ;">
+        <ion-icon name="notifications"></ion-icon>
+        <!-- <ion-badge *ngIf="new_activities">{{new_activities}}</ion-badge> -->
+      </ion-tab-button>
+
+      <ion-tab-button tab="tab-profile" style="background-color: rgb(0, 204, 153)
+      ;">
+        <ion-icon name="person"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
